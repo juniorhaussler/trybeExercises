@@ -1,0 +1,54 @@
+div{
+  width: 180px;
+  padding: 0px;
+  border: 5px;
+  border-color: black;
+}
+div#complementar{
+  width: 300px;
+}
+div:hover{
+  border-style: groove;
+}
+h3{
+  padding: 0px;
+  margin: 5px;
+}
+#primaria{
+  background-color: blue;
+}
+#secundaria{
+  background-color: green;
+}
+#complementar{
+  background-color: violet;
+  width: 300px;
+
+}
+#escura{
+  background-color: black;
+  color: white;
+}
+#clara{
+  background-color: yellow;
+}
+.impar{
+  font-style: italic;
+}
+#primaria:hover{
+  color: white;
+}
+#secundaria:hover{
+  background-color: red;
+}
+#complementar:hover{
+  color: yellow;
+  background-color: green;
+}
+#escura:hover{
+  color: black;
+  background-color: orange;
+}
+#clara:hover{
+  border-style: dashed;
+}
