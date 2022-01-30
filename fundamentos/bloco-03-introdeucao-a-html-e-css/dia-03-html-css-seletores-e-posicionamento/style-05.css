@@ -20,13 +20,21 @@ h1{
 li{
   font-size: 20px;
 }
+/* 
 .fonte-azul{
+  color: blue;
+} */
+
+/* A pseudoclasse :nth-child(-n+x)
+seleciona os primeiros itens de acordo com o valor de "x". */
+#linguagem li:nth-child(-n+3){ /* utilizei o id da ul, cujos li's eu desejava trocar a cor */
   color: blue;
 }
 #fundo-rosa{
   background-color: pink;
-}
-ul.aliados li:hover{
+} 
+
+/* .aliados li:hover{
   font-weight: bold;
 }
 li#stack a:hover{
@@ -42,5 +50,26 @@ li#dev a:hover{
   color: yellow;
 }
 li#trybe a:hover{
+  color: green;
+} */
+
+/* <a> elementos com um href contendo "example"
+a[href*="example"] {
+  font-size: 2em;
+}*/
+
+a[href*="stackoverflow"]:hover {
+  color: orange;
+}
+a[href*="w3schools"]:hover {
+  color: green;
+}
+a[href*="mozilla"]:hover {
+  color: black;
+}
+a[href*="devdocs"]:hover {
+  color: yellow;
+}
+a[href*="betrybe"]:hover {
   color: green;
 }
