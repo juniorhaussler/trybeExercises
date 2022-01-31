@@ -19,25 +19,26 @@
 }
 #main{
   margin: 5px 0 5px 0;
-  padding: 5px;
-  vertical-align: middle;
+  padding: 30px 70px 30px 70px;
   background-color: gray;
   border: 2px red solid;
 }
 #aside{
-  margin: auto;
+  margin: 0px;
   padding: 10px 0 10px 10x;
   display: inline-block;
-  width: 170px;
-  background-color: purple;
+  width: 25%;
+  height: 300px;
+  background-color: rgb(231, 225, 225);
   border: 2px red solid;
 }
 #article{
-  margin: 10px;
+  margin: 0px;
   padding: 10px 10px 10px 10px;
   display: inline-block;
-  width: 70%;
-  background-color: purple;
+  width: 60%;
+  height: 300px;
+  background-color: gold;
   border: 2px red solid;
 }
 #section{
@@ -49,14 +50,14 @@
 #footer{
   margin: 5px 0 5px 0;
   padding: 10px 0 10px 10x;
-  background-color: purple;
+  background-color: greenyellow;
   border: 2px red solid;
 }
 /* Semantics - Fim*/
 /* Menu - Início */
   #menuBar li{
     display: inline-block;
-    margin: 5px;
+    margin: auto;
     width: auto;
   }
 /* Menu - Fim */
@@ -65,3 +66,8 @@
     text-align: center;
   }
 /* h's - Fim */
+/* Links - Início */
+a{
+  font-size: 25px;
+}
+/* Links - Fim */
