@@ -1,0 +1,67 @@
+/* zerar margens e paddings */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* Semantics - Início*/
+#header{
+  margin: 5px 0 5px 0;
+  padding: 10px 0 10px 10px;
+  background-color: gold;
+  border: 2px red solid;
+}
+#nav{
+  margin: 5px 0 5px 0;
+  padding: 10px 0 10px 10px;
+  
+  background-color: green;
+  border: 2px red solid;
+}
+#main{
+  margin: 5px 0 5px 0;
+  padding: 10px 10px 10px 10px;
+  vertical-align: middle;
+  background-color: gray;
+  border: 2px red solid;
+}
+#aside{
+  margin: 5px 10px 5px 0;
+  padding: 10px 0 10px 10x;
+  display: inline-block;
+  width: 170px;
+  background-color: purple;
+  border: 2px red solid;
+}
+#article{
+  margin: 5px 0 5px 0;
+  padding: 10px 10px 10px 10px;
+  display: inline-block;
+  width: 400px;
+  background-color: purple;
+  border: 2px red solid;
+}
+#section{
+  margin: 5px 0 5px 0;
+  padding: 10px 0 10px 10px;
+  background-color: blue;
+  border: 2px red solid;
+}
+#footer{
+  margin: 5px 0 5px 0;
+  padding: 10px 0 10px 10x;
+  background-color: purple;
+  border: 2px red solid;
+}
+/* Semantics - Fim*/
+/* Menu - Início */
+  #menuBar li{
+    display: inline-block;
+    margin: 5px;
+    width: auto;
+  }
+/* Menu - Fim */
+/* h's - Início */
+  h1{
+    text-align: center;
+  }
+/* h's - Fim */
