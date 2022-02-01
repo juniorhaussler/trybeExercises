@@ -1,0 +1,31 @@
+#header{
+  background-color: #FFC5E5;
+  position: absolute; left: 0px; top: 0px;
+  width: 100%;
+}
+body{
+  background-color: #FEE9FC;
+}
+*{
+  font-family: arial;
+  color: #1f1c0d;
+}
+#name{
+  margin: 10px 100px 10px 10px;
+  width: 40%;
+  text-align: left;
+  display: inline-block;
+  border: 2px red solid;
+}
+#nav{
+  margin: 10px 20px 10px 150px;
+  width: 40%;
+  text-align: center;
+   display: inline-block;
+  border: 2px red solid;
+}
+#nav h3{
+  margin: 0 35px 0 35px;
+  padding: auto;
+  display: inline-block;
+}
