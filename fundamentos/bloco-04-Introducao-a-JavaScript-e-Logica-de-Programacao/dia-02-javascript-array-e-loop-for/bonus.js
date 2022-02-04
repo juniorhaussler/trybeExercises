@@ -16,7 +16,7 @@ for(i1 = 1; i1 < numbers.length; i1 += 1){
 }
 */
 
-// Bônus 02
+/* Bônus 02
 let valAux = [];
 let contador = 0;
 for(i1 = 1; i1 < numbers.length; i1 += 1){
@@ -30,3 +30,21 @@ for(i1 = 1; i1 < numbers.length; i1 += 1){
     console.log( "Iteração "+ contador + " - O array é: " +numbers);
   }
 }
+*/
+
+//Bônus 03
+let newArray = [];
+let multi = 0;
+let contador = 0;
+for (let i = 0; i < numbers.length; i+=1){
+  contador+=1;
+  if(contador < numbers.length){
+    multi =  numbers[i] * numbers[i+1];
+  newArray.push(multi);
+  }
+  else{
+    multi =  numbers[i] * 2;
+  newArray.push(multi);
+  }
+}
+console.log("O novo array é: "+ newArray);
