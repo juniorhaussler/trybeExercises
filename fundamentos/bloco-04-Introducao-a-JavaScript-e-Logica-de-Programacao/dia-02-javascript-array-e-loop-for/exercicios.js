@@ -1,4 +1,4 @@
-//let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //Exercício 01
 // for (let i=0; i<numbers.length; i+=1){
@@ -55,7 +55,7 @@ for(let num1 = 0; num1  <= numbers.length; num1+=1){
   console.log("O maior valor é: " + maiorValor);
 */
 
-/* exercíico 06
+/*exercíico 06
  let valImpar = 0;
 for(let i=0; i<numbers.length; i+=1){
   if(numbers[i] % 2 != 0){
@@ -97,7 +97,7 @@ for(let num1 = 0; num1  <= numbers.length; num1+=1){
 console.log("O array é: " + num);
 */
 
-//exercício 09
+/*exercício 09
 
 let num = [];
 
@@ -106,8 +106,17 @@ for ( let i = 1; i <= 25; i+=1 ) {
   console.log(num[i-1] + " dividido por 2 é: " + num[i-1]/2);
 }
 //console.log("O array é: " + num);
+*/
 
-
+/*
+et numbers = [5, 9, 3, 19, 70, 8, 100, 102, 35, 27];
+                // let maiorValor = 0;
+                // for (index =0 ; index < numbers.length; index +=1){
+                //   if(numbers[index] > maiorValor){
+                //     maiorValor = numbers[index];
+                //   }
+                // }
+                // console.log(maiorValor);*/
 
 
 
