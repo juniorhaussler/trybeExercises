@@ -61,3 +61,23 @@ for (let i = 0; i <= array.length - 1; i += 1) {
 
 // Sem precisar declarar todas essa variaveis
 console.log(array[tamanho.indexOf(Math.min.apply(null, tamanho))]);*/
+
+// 04 - Os Impares
+
+let impares = [];
+let maior = 0;
+for(let i1 = 1; i1<= 50; i1 +=1){
+  let contador = 0;
+  for (let i2 = i1; i2 >0; i2 -=1){
+    if(i1 % i2 === 0){
+      contador += 1;
+    }
+    
+  }
+  if (contador <= 2){
+    impares.push(i1);
+   }
+}
+console.log("Os números primos são: " + impares);
+maior = Math.max.apply(null, impares);
+console.log( " O maior número ímppar é: " + maior);
