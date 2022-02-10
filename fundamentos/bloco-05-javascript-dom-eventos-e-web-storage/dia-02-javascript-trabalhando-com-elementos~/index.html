@@ -1,6 +1,6 @@
 <!-- arquivo index.html -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,4 +16,38 @@
   </main>
   <script src="script.js"></script>
 </body>
-</html>
+</html> -->
+
+<main id="paiDoPai">
+  <section id="pai">
+    <section id="primeiroFilho"></section>
+    <section id="elementoOndeVoceEsta">
+      <section id="primeiroFilhoDoFilho"></section>
+      <section id="segundoEUltimoFilhoDoFilho"></section>
+    </section>
+    Atenção!
+    <section id="terceiroFilho"></section>
+    <section id="quartoEUltimoFilho"></section>
+  </section>
+</main>
+<script>
+  // 1.Acesse o elemento elementoOndeVoceEsta.
+
+    let son = document.querySelector('#elementoOndeVoceEsta');
+  
+   // 2.Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+
+    let father = son.parentNode;
+
+  // 3.Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+   let grandSon = son.firstChild;
+      
+  // 4.Acesse o primeiroFilho a partir de pai.
+  // 5.Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+  // 6.Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+  // 7.Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+  // 8.Agora acesse o terceiroFilho a partir de pai.
+
+
+
+</script>
