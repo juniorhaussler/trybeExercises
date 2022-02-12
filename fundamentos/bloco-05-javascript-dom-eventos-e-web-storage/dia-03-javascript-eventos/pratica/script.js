@@ -34,4 +34,15 @@ function createDaysList(array) {
   }
 }
 
+function createButton(buttonName){
+  let div = document.querySelector('.buttons-container')
+  let btnHoliday = document.createElement('button');
+      btnHoliday.id = 'btn-holiday';
+      btnHoliday.name = buttonName;
+      btnHoliday.innerText = 'Feriados';
+      div.appendChild(btnHoliday);
+}
+
+
 createDaysList(dezDaysList);
+createButton('Feriados');
