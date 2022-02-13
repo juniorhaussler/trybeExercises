@@ -24,7 +24,7 @@ function createDaysList(array) {
     let itemList = document.createElement('li');
         itemList.className = 'day'
     if ( day === 24 || day === 25 || day === 31 ) {
-      itemList.className = itemList.className + ' hollyday';
+      itemList.className = itemList.className + ' holiday';
     }
     if ( day === 4 || day === 11 || day === 18 || day === 25 ){
       itemList.className = itemList.className + ' friday';
@@ -41,6 +41,14 @@ function createButton(buttonName){
       btnHoliday.name = buttonName;
       btnHoliday.innerText = 'Feriados';
       div.appendChild(btnHoliday);
+      btnHoliday.addEventListener('click', function(){
+        let holiday = document.getElementsByClassName('holiday');
+        for ( let i= 0; i< holiday.length; i += 1 ){
+          holiday[i].style.backgroundColor = "#D3D3D3";
+        }
+      } 
+      )
+
 }
 
 
