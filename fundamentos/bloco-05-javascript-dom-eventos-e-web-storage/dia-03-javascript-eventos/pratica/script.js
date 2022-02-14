@@ -22,7 +22,7 @@ function createDaysList(array) {
   for(let i=0; i < dezDaysList.length; i +=1){
     let day = dezDaysList[i];
     let itemList = document.createElement('li');
-        itemList.className = 'day'
+        itemList.className = 'day';
     if ( day === 24 || day === 25 || day === 31 ) {
       itemList.className = itemList.className + ' holiday';
     }
@@ -41,16 +41,25 @@ function createButton(buttonName){
       btnHoliday.name = buttonName;
       btnHoliday.innerText = 'Feriados';
       div.appendChild(btnHoliday);
-      btnHoliday.addEventListener('click', function(){
-        let holiday = document.getElementsByClassName('holiday');
-        for ( let i= 0; i< holiday.length; i += 1 ){
-          holiday[i].style.backgroundColor = "#D3D3D3";
-        }
-      } 
-      )
-
+      btnHoliday.addEventListener('click', ChangeBackgroundColor )
 }
 
+function createFridayButton(buttonName){
+  div = document.querySelector('.buttons-container');
+  btnFriday = document.createElement('button');
+  btnFriday.id = 'btn-friday';
+  btnFriday.name = buttonName;
+  btnFriday.innerText = 'Sexta-feira';
+  div.appendChild(btnFriday);
+}
+
+function ChangeBackgroundColor(){
+  let holiday = document.getElementsByClassName('holiday');
+  for ( let i= 0; i< holiday.length; i += 1 ){
+    holiday[i].style.backgroundColor = "#D3D3D3";
+  }
+}
 
 createDaysList(dezDaysList);
 createButton('Feriados');
+createFridayButton('Sexta-feira');
