@@ -38,8 +38,8 @@ function createButton(buttonName){
   let div = document.querySelector('.buttons-container')
   let btnHoliday = document.createElement('button');
       btnHoliday.id = 'btn-holiday';
-      btnHoliday.name = buttonName;
-      btnHoliday.innerText = 'Feriados';
+      //btnHoliday.name = buttonName;
+      btnHoliday.innerHTML = buttonName;
       div.appendChild(btnHoliday);
       btnHoliday.addEventListener('click', ChangeBackgroundColor )
 }
@@ -48,17 +48,39 @@ function createFridayButton(buttonName){
   div = document.querySelector('.buttons-container');
   btnFriday = document.createElement('button');
   btnFriday.id = 'btn-friday';
-  btnFriday.name = buttonName;
-  btnFriday.innerText = 'Sexta-feira';
+  //btnFriday.name = buttonName;
+  btnFriday.innerHTML = buttonName;
   div.appendChild(btnFriday);
+  btnFriday.addEventListener('click', changeFridaysText);
+}
+
+function changeFridaysText(){
+  let friday = document.querySelectorAll('.friday');
+  let storedFridays = [];
+  for ( let i = 0; i < friday.length; i += 1){
+    storedFridays.push(friday[i].innerHTML) ;
+    if(friday[i].innerHTML === storedFridays[i]){
+      friday[i].innerHTML = 'Sextou!';
+    }else{
+      friday[i].innerHTML = storedFridays[i];
+    }
+    
+  }
 }
 
 function ChangeBackgroundColor(){
   let holiday = document.getElementsByClassName('holiday');
-  for ( let i= 0; i< holiday.length; i += 1 ){
-    holiday[i].style.backgroundColor = "#D3D3D3";
+  let backgroundColor = 'rgb(238, 238, 238)';
+  let setNewColor = 'rgb(211, 211, 211)';
+  for ( let i = 0; i < holiday.length; i += 1 ){
+    if ( holiday[i].style.backgroundColor === setNewColor){
+      holiday[i].style.backgroundColor = backgroundColor;
+    }else{
+      holiday[i].style.backgroundColor = setNewColor;
+    }
   }
 }
+
 
 createDaysList(dezDaysList);
 createButton('Feriados');
