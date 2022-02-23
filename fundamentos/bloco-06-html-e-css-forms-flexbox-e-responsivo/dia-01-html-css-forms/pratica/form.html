@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>TrybeTrip</title>
+</head>
+<body>
+  <header><h1>TrybeTrip</h1></header>
+  <main id="main">
+    <form action="" method="GET" enctype="multipart/form-data">
+      <section id="section-form">
+        <section>
+          <label for="inpName" class="lbl"> Nome:
+            <input type="text" name="name" id="inpName" minlength="10" maxlength="40" required>
+          </label>
+          <label for="inpEmail" class="lbl"> email:
+            <input type="email" id="inpEmail" minlength="10" maxlength="50" required>
+          </label>
+        </section>
+        <section id="section-destiny">
+          <label for="opcoes" id="lbl-destiny" class="lbl">
+            Destino Preferido:
+            </label>
+            <input type="radio" name="opcoes" class="opcoes" value="cid">Cidade
+            <input type="radio" name="opcoes" class="opcoes" value="cam">Campo
+            <input type="radio" name="opcoes" class="opcoes" value="pra">Praia
+            <input type="radio" name="opcoes" class="opcoes" value="mon">Montanahas
+          
+          </section>
+        <section id="section-ask">
+          <label for="resosta" id="lbl_resp">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+          <textarea name="resposta" id="resposta" cols="80" rows="10" maxlength="500" required></textarea>
+        </section>
+        <section id="section-date">
+          <label for="date" id="lbl-date" class="lbl" > Qual a melhor data para realizar sua viagem?
+            <input type="date" id="date" required>
+          </label>
+        </section>
+        <section>
+          <label for="oportunidades" id='lbl-oportunities'>
+            Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+            <input type="checkbox" id="oportunidades" name="opor" value="opor">
+          </label>
+          <label for="chk-img" id="lbl-concursos">
+            Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+            <input required type="checkbox" id="chk-img" name="imagem" value="img">
+          </label>
+        </section>
+      </section>
+      <section id="section-button">
+        <button type="submit" id="btn-submit" class="btn-form">Enviar</button>
+        <button type="reset" id="btn-delete" class="btn-form">Apagar</button>
+      </section>
+    </form>
+  </main>
+  <footer><section id="footer-section"><h4>2022. Desenvolvida por Osmar Junior. Todos os direitos reservados.</h4></section></footer>
+<script src="script.js"></script>
+</body>
+</html>
