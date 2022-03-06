@@ -3,6 +3,8 @@
 //   lastName: 'Jr',
 // }
 
+const { reporter } = require("it/lib/formatters");
+
 // const updateStudent = (object, key, value) => {
 //   let newKey = key;
 //   const keyValue = value;
@@ -109,17 +111,32 @@ const allLessons =  Object.assign({},{lesson1, lesson2, lesson3});
 //BÔNUS
  // 1ª Questão
  
-function countStudents(obj, value){
- const array = Object.keys(obj);
- let sumStudent =0;
- for (let i = 0; i < array.length; i += 1){
-  if (obj[array[i]].materia === value){
-      sumStudent += obj[array[i]].numeroEstudantes;
-  }
- }
- return sumStudent;
-}
+// function countStudents(obj, value){
+//  const array = Object.keys(obj);
+//  let sumStudent =0;
+//  for (let i = 0; i < array.length; i += 1){
+//   if (obj[array[i]].materia === value){
+//       sumStudent += obj[array[i]].numeroEstudantes;
+//   }
+//  }
+//  return sumStudent;
+// }
 
-console.log(countStudents (allLessons, 'Matemática'));
+// console.log(countStudents (allLessons, 'Matemática'));
 
 // 2ª Questão
+function createReport(obj, value){
+  const array = Object.keys(obj);
+  let sumStudent = 0;
+  let materias = [];
+  for (let i = 0; i < array.length; i += 1){
+    if (obj[array[i]].professor === value){
+      sumStudent += obj[array[i]].numeroEstudantes;
+      materias.push((obj[array[i]].materia));
+    }
+  }
+  let report = { professor: value, aulas: materias, estudantes: sumStudent, };
+  return report;
+}
+
+console.log(createReport(allLessons, 'João'));
