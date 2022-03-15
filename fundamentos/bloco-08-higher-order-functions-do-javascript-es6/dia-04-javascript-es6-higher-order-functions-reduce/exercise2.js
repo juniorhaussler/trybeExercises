@@ -74,7 +74,17 @@ const books = [
 
 // console.log(reduceNames());
 
+// function reduceNames() {
+//   return books.reduce((acc, curr)=> `${acc} ${curr.author.name}`, ``);
+// }
+
+
 function reduceNames() {
-  return books.reduce((acc, curr)=> `${acc} ${curr.author.name}`, ``);
+  const names = books.reduce((acc, book, index, array) => {
+    if (index === array.length - 1) return `${acc} ${book.author.name}.`;
+    return `${acc} ${book.author.name},`;
+  }, '');
+  return names.trim();
 }
+
 console.log(reduceNames());
